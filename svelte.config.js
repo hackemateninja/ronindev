@@ -5,10 +5,19 @@ import preprocess from 'svelte-preprocess';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess(),
+	preprocess: preprocess({ postcss: true }),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$add: 'src/adapters',
+			$app: 'src/application',
+			$domain: 'src/domain',
+			$services: 'src/services',
+			$ui: 'src/ui',
+			$svg: 'src/ui/svg',
+			$root: 'src',
+		}
 	}
 };
 
