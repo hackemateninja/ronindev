@@ -7,10 +7,7 @@ module.exports = {
 	plugins: [
 		require('daisyui'),
 		require('@tailwindcss/typography'),
-		require('@tailwindcss/forms'),
-		require('@tailwindcss/aspect-ratio'),
 		require('@tailwindcss/container-queries'),
-		require('@tailwindcss/line-clamp')
 	],
 	daisyui: {
 		styled: true,
