@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="font-inter antialiased bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-200 tracking-tight">
+	<div class="max-w-7xl mx-auto"></div>
+		<div class="min-h-screen flex">
+
+			<!-- Side navigation -->
+			{{ partial "navigation.html" . }}
+			
+			<!-- Main content -->
+			<main class="grow overflow-hidden px-6">
+				<div class="w-full h-full max-w-[1072px] mx-auto flex flex-col">
+
+					<!-- Header -->
+					{{ partial "header.html" . }}
+
+					<!-- Hero -->
+					{{ partial "hero.html" . }}
+
+					<!-- Content -->
+					<div class="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pb-16 md:pb-20">
+
+						 <!-- Middle area -->
+						<div class="grow">
+							<div class="max-w-[700px]">
+								<div class="space-y-10">
+									{{ block "main" . }}
+									{{ end }}
+								</div>
+							</div>
+						</div>
+
+						<!-- Right sidebar -->
+						{{ partial "sidebar.html" . }}
+						
+					</div>
+					
+					<!-- Footer -->
+					{{ partial "footer.html" . }}
+				</div>
+			</main>
+			
+		</div>
+	</div>
+</body>
+</html>
