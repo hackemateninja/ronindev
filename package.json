@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css --watch",
-    "build": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css",
+    "build:css": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/compiled/main.css",
+    "build:hugo": "hugo --gc --minify",
+		"build": "npm run build:css && npm run build:hugo",
     "start": " hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts"
   },
   "keywords": [],
