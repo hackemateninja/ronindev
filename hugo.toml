@@ -5,6 +5,15 @@ title = 'Ronindev'
 enableEmoji = true
 enableRobotsTXT= true
 
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    languageCode = "en"
+    weight = 1
+  [languages.es]
+    languageCode = "es"
+    weight = 2
+
 [params]
 	logo = "/images/logo-without-text.webp"
 	favicon = "/images/favicon.ico"
