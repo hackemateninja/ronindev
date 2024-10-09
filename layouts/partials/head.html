@@ -7,7 +7,7 @@
 {{ $options := dict "inlineImports" true }}
 {{ $styles := resources.Get "css/compiled/main.css" }}
 {{ $styles = $styles  | resources.PostCSS $options }}
-{{ if hugo.IsProduction }}
+{{ if eq hugo.Environment "production" }}
 	{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
 <link href="{{ $styles.RelPermalink }}" rel="stylesheet" >
