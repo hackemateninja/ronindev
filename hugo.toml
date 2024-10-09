@@ -1,28 +1,84 @@
 baseURL = 'https://ronindev.ninja/'
+copyright = 'Bushidolabs LLC All rights reserved.'
 languageCode = 'en-us'
 title = 'Ronindev'
+enableEmoji = true
+enableRobotsTXT= true
 
 [params]
-	company = 'Bushido Labs LLC'
-	description = 'The functional software development company'
-	fundationDate = '23 Oct, 2020'
+	logo = "/images/logo-without-text.webp"
+	favicon = "/images/favicon.ico"
 
-[frontmatter]
-  date = ["date", "publishDate", "lastmod"]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+      icon = "icons/home.html"
 
-[taxonomies]
-  categories = "categories"
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+    [menu.main.params]
+      icon = "icons/important.html"
 
-[sitemap]
-  changefreq = 'monthly'
-  filename = 'sitemap.xml'
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+    [menu.main.params]
+      icon = "icons/portfolio.html"
+
+  [[menu.main]]
+    name = "Resume"
+    url = "/resume/"
+    weight = 4
+    [menu.main.params]
+      icon = "icons/square.html"
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+    [menu.main.params]
+      icon = "icons/indicator.html"
+
+	[[menu.footer]]
+    name = "X"
+    url = "https://x.com/Hackemateninja"
+    weight = 1
+    [menu.footer.params]
+      icon = "icons/x.html"
+
+	[[menu.footer]]
+    name = "YouTube"
+    url = "https://www.youtube.com/c/hackemateninja"
+    weight = 2
+    [menu.footer.params]
+      icon = "icons/youtube.html"
+
+	[[menu.footer]]
+    name = "Github"
+    url = "https://github.com/hackemateninja"
+    weight = 3
+    [menu.footer.params]
+      icon = "icons/github.html"
+
+	[[menu.footer]]
+    name = "Email"
+    url = "/contact/"
+    weight = 4
+    [menu.footer.params]
+      icon = "icons/airplaine.html"
+
 
 [module]
   [module.hugoVersion]
     extended = true
-    min      = "0.115.0"
-[[module.mounts]]
+    min      = "0.128.0"
+	[[module.mounts]]
     source = "node_modules/alpinejs/dist"
     target = "assets/alpinejs"
   [[module.mounts]]

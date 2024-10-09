@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="shortcut icon" href="{{.Site.Params.favicon}}" />
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
 {{/* styles */}}
@@ -28,3 +28,6 @@
 	{{ $alpine := resources.Get "alpinejs/cdn.min.js" | minify }}
 	<script src="{{ $alpine.RelPermalink }}" defer></script>
 {{- end }}
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3468045579720888"
+     crossorigin="anonymous"></script>

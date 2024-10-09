@@ -83,7 +83,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-select,
 .form-checkbox,
 .form-radio {
-    @apply bg-slate-100 border border-slate-100 focus:border-sky-500 dark:bg-slate-700 dark:border-slate-700 dark:focus:border-sky-500;
+    @apply bg-slate-100 border border-slate-100 focus:border-red-500 dark:bg-slate-700 dark:border-slate-700 dark:focus:border-red-500;
 }
 
 .form-input,
@@ -104,7 +104,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .form-checkbox,
 .form-radio {
-    @apply text-sky-500 border-2 rounded-sm;
+    @apply text-red-500 border-2 rounded-sm;
 }
 
 /* Chrome, Safari and Opera */
@@ -198,7 +198,7 @@ input[type=range]::-moz-focus-outer {
 }
 
 .form-switch input[type="checkbox"]:checked+label {
-    @apply bg-sky-500;
+    @apply bg-red-500;
 }
 
 .form-switch input[type="checkbox"]:checked+label>span:first-child {
@@ -216,7 +216,7 @@ input[type=range]::-moz-focus-outer {
 .form-textarea:focus,
 .form-multiselect:focus,
 .form-select:focus {
-    @apply focus:ring-2 focus:ring-sky-200 dark:focus:ring-0;
+    @apply focus:ring-2 focus:ring-red-200 dark:focus:ring-0;
 }
 
 .form-checkbox:focus,
