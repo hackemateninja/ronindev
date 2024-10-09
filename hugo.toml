@@ -9,11 +9,9 @@ defaultContentLanguage = "en"
 [languages]
   [languages.en]
     languageCode = "en"
-		languageDirection = 'ltr'
     weight = 1
   [languages.es]
     languageCode = "es"
-		languageDirection = 'ltr'
     weight = 2
 
 [params]
