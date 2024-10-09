@@ -1,9 +1,0 @@
-{
-  "framework": "hugo",
-	"build": {
-    "env": {
-      "HUGO_VERSION": "0.128.2",
-      "HUGO_EXTENDED": "true"
-    }
-  }
-}
